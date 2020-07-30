@@ -10,4 +10,9 @@ class FlutterBaiduPluginDucafecat {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+
+  static Future<int> duAddOne(int num) async {
+    final int val = await _channel.invokeMethod('duAddOne', {"num": num});
+    return val;
+  }
 }

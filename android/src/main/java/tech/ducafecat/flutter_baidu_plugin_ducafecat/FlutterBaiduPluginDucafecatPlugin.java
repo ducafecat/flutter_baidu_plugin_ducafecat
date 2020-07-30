@@ -2,6 +2,9 @@ package tech.ducafecat.flutter_baidu_plugin_ducafecat;
 
 import androidx.annotation.NonNull;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -41,7 +44,13 @@ public class FlutterBaiduPluginDucafecatPlugin implements FlutterPlugin, MethodC
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("getPlatformVersion")) {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
-    } else {
+    }
+    else if (call.method.equals("duAddOne")) {
+      int val = 100;
+      val += Integer.valueOf(call.argument("num").toString());
+      result.success(val);
+    }
+    else {
       result.notImplemented();
     }
   }

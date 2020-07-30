@@ -15,6 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  int _addOneVal = 0;
 
   @override
   void initState() {
@@ -50,7 +51,18 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            children: <Widget>[
+              Text('Running on: $_platformVersion\n'),
+              FlatButton(
+                onPressed: () async {
+                  _addOneVal = await FlutterBaiduPluginDucafecat.duAddOne(20);
+                  setState(() {});
+                },
+                child: Text('duAddOne val is : $_addOneVal'),
+              )
+            ],
+          ),
         ),
       ),
     );
