@@ -24,10 +24,20 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 28
 
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+
     defaultConfig {
         minSdkVersion 16
     }
     lintOptions {
         disable 'InvalidPackage'
     }
+}
+
+dependencies {
+    implementation files('libs/BaiduLBS_Android.jar')
 }

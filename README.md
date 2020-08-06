@@ -1,14 +1,32 @@
-# flutter_baidu_plugin_ducafecat
+# Flutter Baidu Plugin 百度地图插件
 
-A new flutter plugin project.
+[ ] 定位提醒
 
-## Getting Started
+[ ] 启用国内外定位
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+[ ] 实时获取经纬度
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+[ ] 定位我的位置
+
+[ ] 地图标记
+
+[ ] 地图绘制线
+
+[ ] 地图截图
+
+[ ] 搜索关键字
+
+[ ] 调整百度、高德地图导航
+
+## 安装
+
+```yaml
+flutter_baidu_plugin_ducafecat:
+  git:
+    url: https://github.com/ducafecat/flutter_baidu_plugin_ducafecat
+    version: ^x.x.x 最新版本
+```
+
+## 使用说明
+
+## 视频指导
