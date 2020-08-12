@@ -17,11 +17,13 @@
 ## 环境
 
 ```sh
-$ flutter --version
-Flutter 1.20.1 • channel stable • https://github.com/flutter/flutter.git
-Framework • revision 2ae34518b8 (6 days ago) • 2020-08-05 19:53:19 -0700
-Engine • revision c8e3b94853
-Tools • Dart 2.9.0
+$ flutter doctor
+Doctor summary (to see all details, run flutter doctor -v):
+[✓] Flutter (Channel stable, 1.20.1, on Mac OS X 10.15.6 19G73, locale zh-Hans-CN)
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
+[✓] Xcode - develop for iOS and macOS (Xcode 11.6)
+[✓] Android Studio (version 4.0)
+[✓] VS Code (version 1.47.3)
 ```
 
 ## 安装
