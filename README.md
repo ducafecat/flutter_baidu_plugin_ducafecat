@@ -14,6 +14,16 @@
 
 [ ] 调整百度、高德地图导航
 
+## 环境
+
+```sh
+$ flutter --version
+Flutter 1.20.1 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 2ae34518b8 (6 days ago) • 2020-08-05 19:53:19 -0700
+Engine • revision c8e3b94853
+Tools • Dart 2.9.0
+```
+
 ## 安装
 
 ```yaml
