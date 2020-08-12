@@ -13,7 +13,7 @@ class FlutterBaiduPluginDucafecat {
 
   /// ios 下设置 key
   /// android 在 AndroidManifest.xml 中设置
-  static Future<bool> setApiKey(String key) async {
+  static Future<bool> setApiKeyForIOS(String key) async {
     return await _channel.invokeMethod("setApiKey", key);
   }
 

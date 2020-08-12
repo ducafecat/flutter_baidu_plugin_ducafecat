@@ -1,10 +1,6 @@
 # Flutter Baidu Plugin 百度地图插件
 
-[ ] 定位提醒
-
-[ ] 启用国内外定位
-
-[ ] 实时获取经纬度
+[x] 实时获取经纬度
 
 [ ] 定位我的位置
 
@@ -30,3 +26,13 @@ flutter_baidu_plugin_ducafecat:
 ## 使用说明
 
 ## 视频指导
+
+## 常见错误
+
+### ios
+
+- 设置 Info.plist NSLocationWhenInUseUsageDescription 需要定位
+
+```
+reason	__NSCFConstantString *	"To use location in iOS8 you need to define either NSLocationWhenInUseUsageDescription or NSLocationAlwaysUsageDescription in the app bundle's Info.plist file"	0x00000001023b5278
+```
